@@ -2,5 +2,5 @@ Django==3.0.3
 django-tastypie # API
 django-registration # account logic, views and workflows
 psycopg2
-
+django-survey-and-report
 
