@@ -79,7 +79,7 @@ DATABASES = {
         'NAME': 'postgres',
         'USER': 'postgres',
         'PASSWORD': env.get("POSTGRES_PASSWORD"),
-        'HOST': 'postgresql',
+        'HOST': env.get("POSTGRES_HOST"),
         'PORT': '5432',
     }
 }
