@@ -19,7 +19,8 @@ services:
     command: bash -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
     environment:
       POSTGRES_PASSWORD: postgres
-    ports: 
+      POSTGRES_HOST: postgres
+    ports:
         - 80:8000
     depends_on: 
         - postgres
