@@ -16,12 +16,21 @@ from os import environ as env
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
 >>>>>>> b7c41758791903fbcd6ef999a40e4c837d1bddc7
+||||||| e2cc5a2... switched from polls to surveys
+=======
+
+# Quick-start development settings - unsuitable for production
+# See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
+
+# SECURITY WARNING: keep the secret key used in production secret!
+>>>>>>> parent of e2cc5a2... switched from polls to surveys
 SECRET_KEY = '-&=lf#8&wn1wu!ui1d!afb66p(nr%lu=&+ci_uroogeyz1ml)4'
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -33,10 +42,15 @@ ALLOWED_HOSTS = ['0.0.0.0']
 
 INSTALLED_APPS = [
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     'survey.apps.DjangoSurveyAndReportConfig',
     'students.apps.StudentsConfig',
 >>>>>>> b7c41758791903fbcd6ef999a40e4c837d1bddc7
+||||||| e2cc5a2... switched from polls to surveys
+=======
+    'polls.apps.PollsConfig',
+>>>>>>> parent of e2cc5a2... switched from polls to surveys
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -45,15 +59,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "bootstrapform",
 ]
-from pathlib import Path
 
-CSV_DIRECTORY = Path("csv")
-TEX_DIRECTORY = Path("tex")
-
-INSTALLED_APPS += [
-	'bootstrapform',
-	'survey'
-]
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -65,20 +71,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'mysite.urls'
-EXCEL_COMPATIBLE_CSV = True
 
-# The separator for questions (Default to ",")
-CHOICES_SEPARATOR = "|"
-
-# What is shown in export when the user do not answer (Default to "Left blank")
-USER_DID_NOT_ANSWER = "NAA"
-
-# Path to the Tex configuration file (default to an internal file that should be sufficient)
-from pathlib import Path
-TEX_CONFIGURATION_FILE = Path("tex", "tex.conf")
-
-# Default color for exported pdf pie (default to "red!50")
-SURVEY_DEFAULT_PIE_COLOR = "blue!50"
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
