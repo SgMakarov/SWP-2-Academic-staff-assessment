@@ -15,10 +15,22 @@ from os import environ as env
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+>>>>>>> b7c41758791903fbcd6ef999a40e4c837d1bddc7
+||||||| e2cc5a2... switched from polls to surveys
+=======
+
+# Quick-start development settings - unsuitable for production
+# See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
+
+# SECURITY WARNING: keep the secret key used in production secret!
+>>>>>>> parent of e2cc5a2... switched from polls to surveys
 SECRET_KEY = '-&=lf#8&wn1wu!ui1d!afb66p(nr%lu=&+ci_uroogeyz1ml)4'
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -29,8 +41,16 @@ ALLOWED_HOSTS = ['0.0.0.0']
 # Application definition
 
 INSTALLED_APPS = [
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
     'survey.apps.DjangoSurveyAndReportConfig',
     'students.apps.StudentsConfig',
+>>>>>>> b7c41758791903fbcd6ef999a40e4c837d1bddc7
+||||||| e2cc5a2... switched from polls to surveys
+=======
+    'polls.apps.PollsConfig',
+>>>>>>> parent of e2cc5a2... switched from polls to surveys
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
