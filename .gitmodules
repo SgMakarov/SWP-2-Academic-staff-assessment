@@ -1,0 +1,4 @@
+[submodule "Academic-staff-assessment"]
+	path = Academic-staff-assessment
+	url = https://github.com/matveyplevako/Academic-staff-assessment
+	branch = master
